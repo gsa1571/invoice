@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+    <title>A simple, clean, and responsive HTML invoice template</title>
+    
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
+                            </td>
+                            <td>
+                                Invoice #: 123<br>
+                                Created: January 1, 2015<br>
+                                Due: February 1, 2015
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td>
+                                Sparksuite, Inc.<br>
+                                12345 Sunny Road<br>
+                                Sunnyville, CA 12345
+                            </td>
+                            <td>
+                                Acme Corp.<br>
+                                John Doe<br>
+                                john@example.com
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="heading">
+                <td>
+                    Payment Method
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    Check #
+                </td>
+            </tr>
+            
+            <tr class="details">
+                <td>
+                    Check
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    1000
+                </td>
+            </tr>
+			
+			
+            <tr class="heading">
+                <td>
+                    Item
+                </td>
+                
+                <td>
+                    Unit cost
+                </td>
+                <td>
+                    Qty
+                </td>
+                <td>
+                    Price
+                </td>
+            </tr>
+
+			<tr class="item">
+				<td><input value="Item1" /></td>
+				<td>$<input type="number" value="0" /></td>
+				<td><input type="number" value="1" /></td>
+				<td>$0.00</td>
+			</tr>			
+
+            <tr>
+                <td><input id="add" type="submit" value="Add row"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+			<tr class="total">
+                <td></td>
+                <td></td>
+                <td>Total: </td>
+                <td>
+                   $00.00
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
