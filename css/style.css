@@ -95,6 +95,6 @@
     .rtl table tr td:nth-child(2) {
         text-align: left;
     }
-    .text{
+    .text-right{
         text-align: right;
     }
