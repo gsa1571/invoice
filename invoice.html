@@ -1,118 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <head>
+        <meta charset="utf-8"/>
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>A simple, clean, and responsive HTML invoice template</title>
+    </head>
 
-    <title>A simple, clean, and responsive HTML invoice template</title>
-  </head>
+    <body>
+        <div class="invoice-box">
+            <table cellpadding="0" cellspacing="0" class="table table-resposive">
+                <tr class="top">
+                    <td colspan="4">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <img src="https://www.sparksuite.com/images/logo.png" style="width: 100%; max-width: 300px;"/>
+                                </td>
+                                <td>
+                                    Invoice #: 123<br/>
+                                    Created: January 1, 2015<br/>
+                                    Due: February 1, 2015
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
-  <body>
-    <div class="invoice-box">
-      <div></div>
-      <table cellpadding="0" cellspacing="0">
-        <tr class="top">
-          <td colspan="4">
-            <table>
-              <tr>
-                <td class="title">
-                  <img
-                    src="https://www.sparksuite.com/images/logo.png"
-                    style="width: 100%; max-width: 300px;"
-                  />
-                </td>
-                <td>
-                  Invoice #: 123<br />
-                  Created: January 1, 2015<br />
-                  Due: February 1, 2015
-                </td>
-              </tr>
+                <tr class="information">
+                    <td colspan="4">
+                        <table>
+                            <tr>
+                                <td>
+                                    Sparksuite, Inc.<br/>
+                                    12345 Sunny Road<br/>
+                                    Sunnyville, CA 12345
+                                </td>
+                                <td>
+                                    Acme Corp.<br/>
+                                    John Doe<br/>
+                                    john@example.com
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="heading">
+                    <td>
+                        Payment Method
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        Check #
+                    </td>
+                </tr>
+
+                <tr class="details">
+                    <td>
+                        Check
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        1000
+                    </td>
+                </tr>
+
+                <tr class="heading">
+                    <td>
+                        Item
+                    </td>
+
+                    <td>
+                        Unit cost
+                    </td>
+                    <td>
+                        Qty
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                </tr>
+
+                <tr class="item">
+                    <td><input class="form-control" value="Item1"/></td>
+                    <td class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="addon-wrapping">$</span>
+                        </div>
+                        <input class="form-control" type="number" value="0"/></td>
+                    <td><input class="form-control" type="number" value="1"/></td>
+                    <td>$0.00</td>
+                </tr>
+
+                <tr>
+                    <td><input id="add" class="form-control" type="submit" value="Add row"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="total">
+                    <td></td>
+                    <td></td>
+                    <td>Total:</td>
+                    <td>
+                        $00.00
+                    </td>
+                </tr>
             </table>
-          </td>
-        </tr>
-
-        <tr class="information">
-          <td colspan="4">
-            <table>
-              <tr>
-                <td>
-                  Sparksuite, Inc.<br />
-                  12345 Sunny Road<br />
-                  Sunnyville, CA 12345
-                </td>
-                <td>
-                  Acme Corp.<br />
-                  John Doe<br />
-                  john@example.com
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <tr class="heading">
-          <td>
-            Payment Method
-          </td>
-          <td></td>
-          <td></td>
-          <td>
-            Check #
-          </td>
-        </tr>
-
-        <tr class="details">
-          <td>
-            Check
-          </td>
-          <td></td>
-          <td></td>
-          <td>
-            1000
-          </td>
-        </tr>
-
-        <tr class="heading">
-          <td>
-            Item
-          </td>
-
-          <td>
-            Unit cost
-          </td>
-          <td>
-            Qty
-          </td>
-          <td>
-            Price
-          </td>
-        </tr>
-
-        <tr class="item">
-          <td><input value="Item1" /></td>
-          <td>$<input type="number" value="0" /></td>
-          <td><input type="number" value="1" /></td>
-          <td>$0.00</td>
-        </tr>
-
-        <tr>
-          <td><input id="add" type="submit" value="Add row" /></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr class="total">
-          <td></td>
-          <td></td>
-          <td>Total:</td>
-          <td>
-            $00.00
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>
